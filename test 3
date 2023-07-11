@@ -1,0 +1,30 @@
+# Write a function for checking the speed of driver. 
+# this function should have one parameter: speed. 
+# 1. If speed is less than 70 km/hr, it should print OK
+# 2. Otherwise, for every 5 km per hour more, should give the
+# driver one point. Therefore, if the speed is 80, it should 
+# print 'Points: 2'
+# 3. If the driver has 12 or more points, print "License suspended."
+
+def driver_speed():
+    speed = int(input("Enter the speed: "))
+
+    print("Your speed is")
+    print(speed)
+
+    if speed <= 70:
+        print("Okay")
+    elif speed > 70 and speed < 125:
+        points = ((speed - 70) // 5) + 1
+        print("The points for the speed given is:", points)
+    elif speed >= 125:
+        print("License suspended")
+    else:
+        print("Enter valid speed. ")
+
+def main():
+
+    print("Check speed of driver. ")
+    driver_speed()
+
+main()
