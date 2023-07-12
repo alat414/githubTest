@@ -1,0 +1,14 @@
+# Write a function called show_starts(rows). If rows is 5,
+# it should print the following:
+# *
+# **
+# ***
+# ****
+# *****
+
+base_size = int(input("Enter the number of rows you wish: "))
+
+for r in range (base_size):
+    for c in range(r + 1):
+        print('*', end='')
+    print()
