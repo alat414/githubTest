@@ -1,0 +1,18 @@
+# Write a function that returns the sum of multiples of 3 and 5.
+# between 0 and the limit(parameter). For example, if limit is 20
+# it should return the sum of all multiples of 3 and 5 through 20. 
+
+def sum():
+    sum = 0
+    limit = int(input("Enter the limit you wish: "))
+
+    for i in range (0,limit + 1):
+        if i % 3 == 0 or i % 5 == 0:
+            i += sum
+            print(i)
+
+
+def main():
+    sum()
+
+main()
